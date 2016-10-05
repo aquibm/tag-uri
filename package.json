@@ -1,0 +1,27 @@
+{
+  "name": "tag-uri",
+  "version": "1.0.0",
+  "description": "Node implementation of RFC4151: The 'tag' URI Scheme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aquibm/tag-uri.git"
+  },
+  "keywords": [
+    "tag",
+    "uri",
+    "url",
+    "rfc",
+    "rfc4151",
+    "4151"
+  ],
+  "author": "Aquib Master",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aquibm/tag-uri/issues"
+  },
+  "homepage": "https://github.com/aquibm/tag-uri#readme"
+}

@@ -5,12 +5,13 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "babel src --presets babel-preset-es2015 --out-dir lib",
+    "build:watch": "npm run build -- --watch",
     "prepublish": "npm-run-all lint test build",
     "test": "ava",
     "test:watch": "npm test -- --watch",
     "lint": "esw src --fix",
     "lint:watch": "npm run lint -- --watch",
-    "start": "npm-run-all --parallel test:watch lint:watch"
+    "start": "npm-run-all --parallel test:watch lint:watch build:watch"
   },
   "repository": {
     "type": "git",

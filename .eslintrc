@@ -1,0 +1,4 @@
+{
+	"extends": "airbnb",
+    "indent": ["warn", 4]
+}

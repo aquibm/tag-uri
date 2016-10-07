@@ -9,7 +9,7 @@
     "prepublish": "npm-run-all lint test build",
     "test": "ava",
     "test:watch": "npm test -- --watch",
-    "lint": "esw src --fix",
+    "lint": "esw src",
     "lint:watch": "npm run lint -- --watch",
     "start": "npm-run-all --parallel test:watch lint:watch build:watch"
   },

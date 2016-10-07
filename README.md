@@ -1,6 +1,7 @@
 # Tag URI
 
 [![CircleCI](https://circleci.com/gh/aquibm/tag-uri.svg?style=svg)](https://circleci.com/gh/aquibm/tag-uri)
+[![Code Climate](https://codeclimate.com/github/aquibm/tag-uri/badges/gpa.svg)](https://codeclimate.com/github/aquibm/tag-uri)
 
 This is a node implementation of [RFC4151: The 'tag' URI Scheme.](https://www.ietf.org/rfc/rfc4151.txt)
 

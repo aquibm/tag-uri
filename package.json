@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel src --presets babel-preset-es2015 --out-dir lib",
     "build:watch": "npm run build -- --watch",
-    "prepublish": "npm-run-all lint test build",
+    "clean": "rimraf ./lib",
+    "prepublish": "npm-run-all clean lint build test",
     "test": "ava",
     "test:watch": "npm test -- --watch",
     "lint": "esw src",
@@ -41,6 +42,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
     "eslint-watch": "^2.1.14",
-    "npm-run-all": "^3.1.0"
+    "npm-run-all": "^3.1.0",
+    "rimraf": "^2.5.4"
   }
 }

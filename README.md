@@ -8,18 +8,33 @@ This is a node implementation of [RFC4151: The 'tag' URI Scheme.](https://www.ie
 ### Abstract (from the RFC)
 Tag URIs (also known as "tags") are designed to be unique across space and time while being tractable to humans.  They are distinct from most other URIs in that they have no authoritative resolution mechanism.  A tag may be used purely as an entity identifier. Furthermore, using tags has some advantages over the common practice of using "http" URIs as identifiers for non-HTTP-accessible resources.
 
-### Todo
-- [x] Setup testing framework [(ava)](https://github.com/avajs/ava)
-- [x] Setup eslint
-- [x] Setup npm scripts to handle dev mode, testing etc
-- [x] Setup CI
-- [ ] Publish
-
 ### Installation
-- [ ] Todo
+~~~
+npm install tag-uri
+~~~
 
 ### Usage
-- [ ] Todo
+##### ES6
+```javascript
+import tag from 'tag-uri';
+
+const publishDate = new Date(2016, 4, 28);
+
+const tagged = tag('https://github.com', publishDate);
+// tagged = 'tag:github.com,2016-05-28'
+
+
+const taggedToday = tag('https://github.com/aquibm/tag-uri');
+// taggedToday = 'tag:github.com,2016-09-10:aquibm:tag-uri'
+```
+
+##### ES5
+```javascript
+var tag = require('tag-uri');
+
+var tagged = tag('https://github.com', publishDate);
+// tagged = 'tag:github.com,2016-05-28'
+```
 
 ### License
 [MIT](LICENSE)

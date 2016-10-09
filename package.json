@@ -1,6 +1,6 @@
 {
   "name": "tag-uri",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Node implementation of RFC4151: The 'tag' URI Scheme.",
   "main": "./lib/index.js",
   "scripts": {
@@ -44,5 +44,8 @@
     "eslint-watch": "^2.1.14",
     "npm-run-all": "^3.1.0",
     "rimraf": "^2.5.4"
+  },
+  "dependencies": {
+    "moment": "^2.15.1"
   }
 }

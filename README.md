@@ -32,8 +32,8 @@ const taggedToday = tag('https://github.com/aquibm/tag-uri');
 ```javascript
 var tag = require('tag-uri');
 
-var tagged = tag('https://github.com', publishDate);
-// tagged = 'tag:github.com,2016-05-28'
+var taggedToday = tag('https://github.com');
+// taggedToday = 'tag:github.com,2016-09-10'
 ```
 
 ### License

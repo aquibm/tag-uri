@@ -1,6 +1,6 @@
 {
   "name": "tag-uri",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node implementation of RFC4151: The 'tag' URI Scheme.",
   "main": "./lib/index.js",
   "scripts": {
